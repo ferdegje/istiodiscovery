@@ -1,2 +1,0 @@
-aws_access_key=REPLACE
-aws_secret_key=REPLACE
