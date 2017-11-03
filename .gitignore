@@ -7,3 +7,4 @@
 
 # Confidential files
 credentials.auto.tfvars
+*.lock.info
