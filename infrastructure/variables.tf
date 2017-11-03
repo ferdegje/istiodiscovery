@@ -18,3 +18,11 @@ variable "availability_zones" {
     eu-west-2 = ["eu-west-2a", "eu-west-2b"]
   }
 }
+
+variable "amazon_linux_ami" {
+  type = "map"
+
+  default = {
+    eu-west-2 = "ami-1a7f6d7e"
+  }
+}
