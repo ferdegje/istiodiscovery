@@ -6,4 +6,4 @@
 .terraform/
 
 # Confidential files
-credentials.tfvars
+credentials.auto.tfvars
