@@ -23,7 +23,7 @@ resource "aws_instance" "kubernetes" {
   security_groups = ["${aws_security_group.public.id}"]
   subnet_id = "${aws_subnet.public.*.id[count.index%2]}"
 
-  key_name = "MacBook"
+  key_name = "${var.ec2_key_name}"
 
   tags {
     Name = "${var.project_name} - K8s - ${count.index}/${var.size_of_cluster}"
